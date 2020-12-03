@@ -1,0 +1,141 @@
+body{
+    width: 100%;
+    height: 100%;
+    margin:0;
+    font-family:-apple-system,BlinkMacSystemFont,
+    "Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell",
+    "Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    background-color: grey;
+}
+.shapeApp{
+    background-color: white;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    height: fit-content;
+    margin-top: 8vh;
+    border-radius: 1em;
+    -webkit-border-radius: 1em;
+    -moz-border-radius: 1em;
+    -ms-border-radius: 1em;
+    -o-border-radius: 1em;
+    box-sizing: content-box;
+    border: 1px solid gray;
+    color: rgba(5, 5, 5, 0.7);
+}
+.welcome{
+    margin-left: 1em;
+    margin-top: 2em;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.welcome-small{
+    height: 2em;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.card-input {
+    margin-top: 0.5em;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.card-input-text{
+    width: 90%;
+    height: 3em;
+    border: none;
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: whitesmoke;
+    box-shadow: 0px 2px 2px rgba(5, 5, 5, 0.3), 1px 1px 1px rgba(5, 5, 5, 0.3);
+    transition: border-bottom 0.5s;
+    -webkit-transition: border-bottom 0.5s;
+    -moz-transition: border-bottom 0.5s;
+    -ms-transition: border-bottom 0.5s;
+    -o-transition: border-bottom 0.5s;
+}
+.card-input-text:focus {
+    border-bottom: 1px solid rgba(5, 5, 5, 0.7);
+}
+
+
+.card{
+    width: 90%;
+    height: 7em;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 0.5em;
+    -webkit-border-radius: 0.5em;
+    -moz-border-radius: 0.5em;
+    -ms-border-radius: 0.5em;
+    -o-border-radius: 0.5em;
+    border: 1px solid rgba(5, 5, 5, 0.1);
+    margin-bottom: 2em;
+}
+.shape-select{
+    width: 90%;
+    height: 3em;
+    margin-left: 5%;
+    margin-right: 5%;
+    border: none;
+    background-color: whitesmoke;
+    box-shadow: 0px 2px 2px rgba(5, 5, 5, 0.3), 1px 1px 1px rgba(5, 5, 5, 0.3);
+}
+.shape-btn{
+    margin-left: 5%;
+    margin-bottom: 2em;
+    display: inline-block;
+}
+.create-btn{
+    height: 2.5em;
+    color: white;
+    width: 7em;
+    background-color: rgba(5, 5, 5, 0.7);
+    border-bottom: 1px solid rgba(5, 5, 5, 0.1);
+    border-radius: 0.2em;
+    -webkit-border-radius: 0.2em;
+    -moz-border-radius: 0.2em;
+    -ms-border-radius: 0.2em;
+    -o-border-radius: 0.2em;
+    transition: background-color 0.5s;
+    -webkit-transition: background-color 0.5s;
+    -moz-transition: background-color 0.5s;
+    -ms-transition: background-color 0.5s;
+    -o-transition: background-color 0.5s;
+
+}
+.create-btn:hover {
+    background-color: rgba(5, 5, 5, 1);
+}
+@media screen and (max-width:678px){
+ .shapeApp{
+     width: 100%;
+ }
+}
+@media screen and (max-width: 920px) {
+    .shapeApp{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width:720px) {
+    .shapeApp{
+        width: 100%;
+    }
+}
+
+.viewlast{
+    float: right;
+    margin-right: 5%;
+    margin-top: 0.5em;
+}
+.viewlast-link{
+    color: rgba(5, 5, 5, 0.7);
+    font-size: 0.8em;
+    text-decoration: solid #050505
+    underline;
+    cursor: pointer;
+}
