@@ -2,14 +2,14 @@
 <html lang="en">
 <head> 
     <meta charset="UTF-8">  
-    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no">
-     <meta name="theme-color" content="gray"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
+    <meta name="theme-color" content="gray"> 
     <link rel="stylesheet" href="css/shapeapp.css" type='text/css'/>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" ></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" ></script>
 
-    <title>Shape App Created By Awe Mary -Built with HTML, CSS & JS </title> 
+    <title>Shape App Created By Awe Mary - Built with HTML, CSS & JS </title> 
 </head>
 <body>
  <div id="background">
@@ -37,13 +37,72 @@
                           </select>
                         </div>
                        
-                        <div class="shape-btn">
-                        <button  class="create-btn">CREATE</button>
+    <div class="shape-btn">
+        <button class="create-btn" id="myBtn">CREATE</button>
+            <div id="myPopup" class="popup">
+                <!-- popup content -->
+                <div class="shapeApp popup-content">
+                        <div class="popup-header">
+                          <h3 class="welcome"> Volia!</h3>
+                         <span><h4 class="close">Cancel</h4></span>
+                          <h5 class="welcome-small">Your shape is ready.</h5>
                         </div>
-                        <div class="viewlast">
+                        <div class="popup-body">
+                          <svg class= "theShapes">
+                              <polygon class="shapes" points="149,130 144.5,137.79422863405995 135.5,137.79422863405995 131,130 135.5,122.20577136594005 144.5,122.20577136594005"
+                              fill="black"></polygon>
+                          </svg>
+                        </div>
+                    
+                        <div class="popup-footer">
+                            <div class="selectcolor">
+                          <h5>Change shape color</h5>
+                          <h6 class="selectRed">RED </h6>
+                          <h6 class="selectGreen">GREEN </h6>
+                          <h6 class="selectYellow">YELLOW </h6>
+                          <h6 class="selectBlue">BLUE </h6>
+                          <h6 class="selectWhite">WHITE </h6>
+                          <h6 class="selectBlack">BLACK </h6>
+                          <h6 class="selectOrange">ORANGE</h6>
+                        </div>
+                      </div>
+                    
+                    </div>
+        </div>               
+           <div class="viewlast">
                            <span class="viewlast-link">View Last Shape</span>
                             
                       </div>
     </div>
 </div>
+</div>
+<script>
+// Get the popup
+var popup = document.getElementById('myPopup');
+
+// Get the button that opens the popup
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
 </body>
+</html> 
